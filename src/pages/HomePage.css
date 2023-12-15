@@ -1,0 +1,23 @@
+/* src/HomePage.css */
+
+body,
+html {
+    padding-top: 56px;
+    /* Adjust this value according to the height of your navbar */
+    margin: 0;
+    /* Add more styles as necessary */
+}
+
+.carousel-item {
+    height: 65vh;
+    /* Adjust the height as you see fit */
+    background-color: #777;
+    /* Fallback color */
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* You can add more custom styles as necessary */
