@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Container, Navbar, Nav, Button, Offcanvas } from "react-bootstrap";
 import { BsList } from "react-icons/bs";
+import "./NavigationBar.css";
 
 const NavigationBar: React.FC = () => {
   const [show, setShow] = useState(false);
@@ -19,7 +20,7 @@ const NavigationBar: React.FC = () => {
         bg="light"
         expand="lg"
         className="mb-4 fixed-top"
-        style={{ backgroundColor: "rgba(255, 255, 255, 0.85)" }}
+        style={{ backgroundColor: "rgba(255, 255, 255, 0.9)" }}
       >
         <Container>
           {/* Hamburger Icon */}
@@ -45,7 +46,13 @@ const NavigationBar: React.FC = () => {
       </Navbar>
 
       {/* Offcanvas Menu */}
-      <Offcanvas show={show} onHide={handleClose} placement="start">
+      <Offcanvas
+        show={show}
+        onHide={handleClose}
+        placement="start"
+        className="custom-offcanvas-width"
+        style={{ width: "25%" }}
+      >
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Menu</Offcanvas.Title>
         </Offcanvas.Header>

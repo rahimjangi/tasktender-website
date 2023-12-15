@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
@@ -39,3 +40,4 @@ code {
     /* Remove the margin-top if the navbar height changes */
   }
 }
+

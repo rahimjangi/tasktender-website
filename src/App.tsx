@@ -7,10 +7,9 @@ import HomePage from "./pages/HomePage";
 
 const App: React.FC = () => {
   return (
-    <>
-      {/* Add other sections here */}
+    <div style={{ backgroundColor: "black" }}>
       <HomePage />
-    </>
+    </div>
   );
 };
 
