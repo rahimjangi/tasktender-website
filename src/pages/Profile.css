@@ -1,0 +1,74 @@
+.profile-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 60px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.profile-section {
+    margin-bottom: 20px;
+}
+
+.profile-section h2 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+/* Style for input fields, labels, and other form elements goes here */
+
+.profile-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.profile-button:hover {
+    background-color: #0056b3;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* ... other styles ... */
+.tab-button {
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+.tab-button.active {
+    border-bottom: 2px solid blue;
+}
+
+.tab-button.completed {
+    background-color: #e0ffe0;
+}
+
+/* ... existing styles ... */

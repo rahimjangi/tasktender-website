@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Container, Navbar, Nav, Button, Offcanvas } from "react-bootstrap";
 import { BsList } from "react-icons/bs";
 import "./NavigationBar.css";
@@ -32,7 +33,7 @@ const NavigationBar: React.FC = () => {
           />
 
           {/* Brand Name */}
-          <Navbar.Brand href="#home">Task Tinder</Navbar.Brand>
+          <Navbar.Brand href="/">Task Tinder</Navbar.Brand>
 
           {/* Rest of the Navbar */}
           <Nav className="me-auto">{/* Your navigation links */}</Nav>
@@ -41,7 +42,10 @@ const NavigationBar: React.FC = () => {
           <Button variant="outline-primary" className="me-2">
             Log in
           </Button>
-          <Button variant="primary">Sign up</Button>
+          <Link to="/register" className="btn btn-primary">
+            Sign up
+          </Link>
+          {/* <Button variant="primary">Sign up</Button> */}
         </Container>
       </Navbar>
 
@@ -58,7 +62,7 @@ const NavigationBar: React.FC = () => {
         </Offcanvas.Header>
         <Offcanvas.Body>
           <Nav className="flex-column">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="#features">Features</Nav.Link>
             <Nav.Link href="#pricing">Pricing</Nav.Link>
             {/* Add more dummy links as needed */}

@@ -1,15 +1,22 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import NavigationBar from "./components/common/NavigationBar";
-import MainBanner from "./components/sections/MainBanner";
-import Footer from "./components/common/Footer";
-import "bootstrap/dist/css/bootstrap.min.css";
 import HomePage from "./pages/HomePage";
+import Register from "./pages/RegisterPage";
+import Profile from "./pages/Profile";
 
 const App: React.FC = () => {
   return (
-    <div style={{ backgroundColor: "black" }}>
-      <HomePage />
-    </div>
+    <Router>
+      <NavigationBar />
+      <Routes>
+        <Route path="/register" element={<Register />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/profile" element={<Profile />} />
+        {/* Other routes */}
+      </Routes>
+    </Router>
   );
 };
 

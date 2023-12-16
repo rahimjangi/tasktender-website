@@ -8,12 +8,19 @@ const CarouselSection: React.FC = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://via.placeholder.com/800x400?text=First+slide"
+          // src="../../assets/Handyman.jpg"
+          src={require("../../assets/images/Handyman.jpg")}
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Handyman</h3>
+          <p>
+            Whether you have experience in a trade or are skilled with your
+            hands, you can make money in the gig economy by offering your
+            handyman services in your local community. There is also a need for
+            people who can assemble furniture, fix leaky faucets, or help with
+            small home improvements.
+          </p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
